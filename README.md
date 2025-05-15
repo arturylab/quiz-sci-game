@@ -1,3 +1,3 @@
-# Quiz Sci Game
+# Quiz Sci Game 🧪🎮
 
-Juego educativo interactivo de preguntas científicas con integración Python + C + HTML/JS, pensado para enseñar y evaluar conocimientos científicos de forma divertida. Incluye contenerización con Docker para facilitar despliegue.
+An interactive educational game featuring science quizzes, integrating Python, C, and HTML/JS. Designed to teach and assess scientific knowledge in a fun way! Includes Docker containerization for easy deployment. 🚀
