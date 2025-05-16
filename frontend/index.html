@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Science Quiz</h1>
+    
+    <div id="question-box">
+      <p id="question">What is the chemical symbol for water?</p>
+      <div id="options">
+        <button onclick="submitAnswer('O2')">O<sub>2</sub></button>
+        <button onclick="submitAnswer('H2O')">H<sub>2</sub>O</button>
+        <button onclick="submitAnswer('CO2')">CO<sub>2</sub></button>
+        <button onclick="submitAnswer('NaCl')">NaCl</button>
+      </div>
+    </div>
+
+    <div id="feedback"></div>
+    <div id="score-box">Score: <span id="score">0</span></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
