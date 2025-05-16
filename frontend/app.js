@@ -1,7 +1,7 @@
 let score = 0;
 
 function submitAnswer(answer) {
-  fetch("http://localhost:5000/validate", {
+  fetch("http://localhost:5001/validate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

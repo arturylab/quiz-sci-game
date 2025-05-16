@@ -18,10 +18,11 @@ WORKDIR /app/backend
 RUN gcc -shared -o liblogic.so -fPIC logic.c
 
 # Install Python dependencies
-RUN pip install flask flask_cors
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 # Expose the Flask default port
-EXPOSE 5000
+EXPOSE 5001
 
 # Run the Flask app
 CMD ["python3", "app.py"]
