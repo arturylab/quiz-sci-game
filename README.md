@@ -72,6 +72,15 @@ quiz-sci-game/
 
 ---
 
+## 🧪 Running Tests
+
+To run the backend unit tests:
+
+```bash
+cd backend
+pytest tests
+```
+
 ## 🤝 Contributing
 
 We welcome ideas and contributions! Feel free to fork the repo and suggest new features.

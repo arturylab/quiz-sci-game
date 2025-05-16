@@ -26,6 +26,16 @@ This document outlines the current and upcoming development goals for the **Quiz
 - [ ] Modularize frontend JS (split concerns)
 - [ ] Allow JSON question updates without server restart
 
+## ✅ Phase 2.5: Testing Infrastructure (Completed)
+
+- ✔️ Added unit tests using `pytest`
+- ✔️ Backend tests live in `backend/tests/test_app.py`
+- ✔️ Uses relative imports and package structure (`__init__.py`)
+- ✔️ All endpoints tested:
+  - `/questions` returns question data
+  - `/validate` accepts valid and invalid answers
+- ✔️ Can be executed with: `cd backend && pytest tests`
+
 ---
 
 ## 🚀 Phase 3: New Features (Planned)

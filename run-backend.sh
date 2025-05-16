@@ -6,7 +6,7 @@ CONTAINER_NAME="quiz-backend-container"
 echo "🔄 Building Docker image..."
 docker build -t $IMAGE_NAME .
 
-# Detener y eliminar contenedor si está corriendo
+# Stop and remove container if it is running
 if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
     echo "🛑 Stopping existing container..."
     docker stop $CONTAINER_NAME
