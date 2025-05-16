@@ -25,14 +25,15 @@ h1 {
   font-size: 18px;
   border: none;
   border-radius: 6px;
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   cursor: pointer;
 }
 
 #options button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
 }
+
 
 #feedback {
   margin-top: 20px;
@@ -44,3 +45,4 @@ h1 {
   margin-top: 10px;
   font-size: 18px;
 }
+

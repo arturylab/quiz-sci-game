@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "question": "What is the chemical symbol for water?",
+    "options": ["O2", "H2O", "CO2", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "id": 1,
+    "question": "Which subatomic particle has a negative charge?",
+    "options": ["Proton", "Electron", "Neutron", "Photon"],
+    "answer": "Electron"
+  },
+  {
+    "id": 2,
+    "question": "What unit is used to measure electric current?",
+    "options": ["Volt", "Watt", "Ampere", "Ohm"],
+    "answer": "Ampere"
+  }
+]

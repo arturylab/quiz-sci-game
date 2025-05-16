@@ -1,28 +1,19 @@
-# Use an official Python image
+# Use official Python image
 FROM python:3.11-slim
 
 # Set working directory
 WORKDIR /app
 
-# Install build tools and gcc for compiling C code
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    gcc \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy backend files
+# Copy backend code
 COPY backend/ ./backend/
 
-# Compile the C shared library
-WORKDIR /app/backend
-RUN gcc -shared -o liblogic.so -fPIC logic.c
-
 # Install Python dependencies
-COPY requirements.txt .
+WORKDIR /app/backend
+COPY backend/requirements.txt .
 RUN pip install -r requirements.txt
 
-# Expose the Flask default port
+# Expose port 5001
 EXPOSE 5001
 
-# Run the Flask app
-CMD ["python3", "app.py"]
+# Run the app
+CMD ["python", "app.py"]

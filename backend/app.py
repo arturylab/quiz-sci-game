@@ -1,35 +1,42 @@
+import os
+import json
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import ctypes
 
 app = Flask(__name__)
 CORS(app)
 
-# Load compiled library
-import os
-lib_path = os.path.join(os.path.dirname(__file__), "liblogic.so")
-lib = ctypes.CDLL(lib_path)
+# Load questions from questions.json
+with open(os.path.join(os.path.dirname(__file__), "questions.json")) as f:
+    questions = json.load(f)
 
-
-# Define argument and return types
-lib.validate_answer.argtypes = [ctypes.c_char_p]
-lib.validate_answer.restype = ctypes.c_int
+@app.route("/questions", methods=["GET"])
+def get_questions():
+    # Return questions without answers
+    public_questions = [
+        {
+            "id": q["id"],
+            "question": q["question"],
+            "options": q["options"]
+        } for q in questions
+    ]
+    return jsonify(public_questions)
 
 @app.route("/validate", methods=["POST"])
 def validate_answer():
     data = request.get_json()
     answer = data.get("answer", "")
-    
-    # Convert answer to bytes for C
-    answer_bytes = answer.encode("utf-8")
-    
-    # Call C function
-    is_correct = lib.validate_answer(answer_bytes)
+    question_id = data.get("question_id", -1)
+
+    try:
+        correct = questions[question_id]["answer"]
+    except (IndexError, KeyError):
+        return jsonify({"error": "Invalid question ID"}), 400
 
     return jsonify({
-        "correct": bool(is_correct),
-        "correct_answer": "H2O"
+        "correct": answer.strip() == correct,
+        "question_id": question_id
     })
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5001)
