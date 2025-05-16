@@ -1,97 +1,83 @@
-# Backend – Quiz Science Game
+# 🧪 Quiz Sci Game 🎮
 
-This backend is a Flask application written in Python that communicates with a shared library (`liblogic.so`) written in C. It exposes a `/validate` endpoint to check user answers from the frontend.
+Welcome to **Quiz Sci Game**, an interactive, educational quiz application designed to make learning science fun and dynamic! Built with **Python + Flask** on the backend and **HTML/CSS/JavaScript** on the frontend, this project is now powered by flexible, dynamic data loading from a `questions.json` file.
 
----
-
-## 📁 File Structure
-
-```
-backend/
-├── app.py         # Flask backend app
-├── logic.c        # C source code for answer validation
-├── liblogic.so    # Compiled shared library
-└── README.md      # This documentation file
-```
+🚀 The app runs inside a lightweight Docker container, making it easy to deploy and extend.
 
 ---
 
-## ⚙️ Building the Shared Library (`liblogic.so`)
+## 📚 Features
 
-### Step 1: Create the C file
-
-Filename: `logic.c`
-
-```c
-#include <string.h>
-
-// Compares user answer to the correct one
-int validate_answer(const char* user_answer) {
-    const char* correct = "H2O";
-    return strcmp(user_answer, correct) == 0 ? 1 : 0;
-}
-```
-
-### Step 2: Compile with GCC
-
-Run the following command from inside the `backend/` directory:
-
-```sh
-gcc -shared -o liblogic.so -fPIC logic.c
-```
-
-This will generate the shared object file `liblogic.so`.
+- ✨ Interactive web-based quiz  
+- 📄 Questions loaded from a JSON file (no recompilation needed!)  
+- 🧠 Science-based questions with multiple-choice answers  
+- ✅ Real-time answer validation  
+- 📦 Docker support for easy deployment  
+- 🌐 CORS enabled for local frontend-backend communication  
+- 💡 Built for extensibility — more features coming soon:
+  - 🧩 Tips per question
+  - 📊 Statistics and performance tracking
+  - 📁 Persistent database storage (SQLite, PostgreSQL)
+  - 📈 Data visualization
 
 ---
 
-## 🐍 Python Integration
+## 🛠️ Tech Stack
 
-In `app.py`, the shared library is loaded using `ctypes`:
+| Layer      | Technology                     |
+|------------|--------------------------------|
+| Backend    | Python 3.11, Flask, Flask-CORS |
+| Frontend   | HTML, CSS, JavaScript          |
+| Deployment | Docker                         |
+| Data       | JSON (`questions.json`)        |
 
-```python
-import ctypes
-import os
+---
 
-# Load the compiled C library
-lib_path = os.path.join(os.path.dirname(__file__), "liblogic.so")
-lib = ctypes.CDLL(lib_path)
+## 🚀 Quick Start
 
-# Define argument and return types
-lib.validate_answer.argtypes = [ctypes.c_char_p]
-lib.validate_answer.restype = ctypes.c_int
+1. **Build the Docker image**:
+
+   ```bash
+   docker build -t quiz-backend .
+   ```
+
+2. **Run the container**:
+
+   ```bash
+   docker run -p 5001:5001 quiz-backend
+   ```
+
+3. **Open the frontend**:
+
+   Open `frontend/index.html` in your browser and start playing!
+
+---
+
+## 📂 Project Structure
+
+```
+quiz-sci-game/
+├── backend/
+│   ├── app.py               # Flask backend
+│   ├── questions.json       # Science questions and answers
+│   └── requirements.txt     # Python dependencies
+├── frontend/
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
+├── Dockerfile               # Container configuration
+├── README.md
+└── docs/                    # Project documentation
 ```
 
 ---
 
-## 🚀 Running the Backend
+## 🤝 Contributing
 
-From the project root directory (`quiz-sci-game/`), activate the virtual environment and run:
-
-```sh
-python3 backend/app.py
-```
-
-This will start the development server on port 5000.
+We welcome ideas and contributions! Feel free to fork the repo and suggest new features.
 
 ---
 
-## 📬 API Endpoint
+## 📜 License
 
-### `POST /validate`
-
-Validates a science quiz answer.
-
-**Request (JSON):**
-```json
-{
-  "answer": "H2O"
-}
-```
-
-**Response (JSON):**
-```json
-{
-  "correct": true,
-  "correct_answer": "H2O"
-}
-```
+MIT License. Feel free to use, modify, and share!
