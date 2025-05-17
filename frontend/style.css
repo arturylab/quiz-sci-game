@@ -19,7 +19,7 @@ h1 {
   color: #333;
 }
 
-#options button {
+button {
   margin: 10px;
   padding: 10px 20px;
   font-size: 18px;
@@ -30,8 +30,24 @@ h1 {
   cursor: pointer;
 }
 
-#options button:hover {
-  background-color: #218838;
+button.math {
+  background-color: #4CAF50; /* green */
+}
+button.physics {
+  background-color: #2196F3; /* blue */
+}
+button.chemistry {
+  background-color: #FF9800; /* orange */
+}
+button.biology {
+  background-color: #9C27B0; /* purple */
+}
+button.cs {
+  background-color: #607D8B; /* gray-blue */
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 
@@ -45,4 +61,3 @@ h1 {
   margin-top: 10px;
   font-size: 18px;
 }
-

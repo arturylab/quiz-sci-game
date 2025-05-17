@@ -5,10 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Science Quiz Game</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Science Quiz</h1>
+  <div id="intro-screen" class="container">
+    <h1>🧪🎮 Welcome to the Science Quiz Game!</h1>
+    <p>This educational game consists of <strong>100 multiple-choice questions</strong> covering:</p>
+    <p>📐 Mathematics (40 questions)<br>
+    🔭 Physics (25 questions)<br>
+    ⚗️ Chemistry (15 questions)<br>
+    🧬 Biology (10 questions)<br>
+    💻 Computer Science (10 questions)</p>
+    <p>Each question has four options. Try your best and track your score!</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+  <div id="quiz-screen" class="container" style="display:none;">
+    <h1 id="quiz-title">Science Quiz</h1>
+    
+    <!-- Quiz Header: Progress and Score -->
+    <div id="quiz-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <div>
+        <strong>Question: </strong><span id="question-count">1 / 100</span>
+      </div>
+      <div>
+        <strong>Score: </strong><span id="score">0</span>
+      </div>
+    </div>
 
     <div id="question-box">
       <p id="question">Loading question...</p>
@@ -16,7 +38,7 @@
     </div>
 
     <div id="feedback"></div>
-    <div id="score-box">Score: <span id="score">0</span></div>
+
   </div>
 
   <script src="app.js"></script>

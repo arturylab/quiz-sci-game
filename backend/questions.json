@@ -1,32 +1,602 @@
 [
     {
         "id": 0,
-        "question": "What is the chemical symbol for water?",
-        "options": ["O2", "H2O", "CO2", "NaCl"],
-        "answer": "H2O"
+        "question": "What is the value of \\(\\sqrt{64}\\)?",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8"
     },
     {
         "id": 1,
-        "question": "Which subatomic particle has a negative charge?",
-        "options": ["Proton", "Electron", "Neutron", "Photon"],
-        "answer": "Electron"
+        "question": "What is the solution to the equation \\(2x + 3 = 7\\)?",
+        "options": ["\\(x = 1\\)", "\\(x = 2\\)", "\\(x = 3\\)", "\\(x = 4\\)"],
+        "answer": "\\(x = 2\\)"
     },
     {
         "id": 2,
-        "question": "What unit is used to measure electric current?",
-        "options": ["Volt", "Watt", "Ampere", "Ohm"],
-        "answer": "Ampere"
+        "question": "What is the derivative of \\(x^2\\)?",
+        "options": ["\\(2x\\)", "\\(x\\)", "\\(x^2\\)", "1"],
+        "answer": "\\(2x\\)"
     },
     {
         "id": 3,
-        "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
-        "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
-        "answer": "Carbon dioxide"
+        "question": "What is the sum of the interior angles of a triangle?",
+        "options": ["90°", "180°", "270°", "360°"],
+        "answer": "180°"
     },
     {
         "id": 4,
-        "question": "What is the center of an atom called?",
-        "options": ["Electron", "Proton", "Nucleus", "Neutron"],
-        "answer": "Nucleus"
+        "question": "What is \\(\\frac{1}{2} + \\frac{1}{3}\\)?",
+        "options": ["\\(\\frac{2}{5}\\)", "\\(\\frac{3}{5}\\)", "\\(\\frac{5}{6}\\)", "\\(\\frac{2}{3}\\)"],
+        "answer": "\\(\\frac{5}{6}\\)"
+    },
+    {
+        "id": 5,
+        "question": "What is the value of \\(\\pi\\) approximately?",
+        "options": ["3.12", "3.14", "3.15", "3.16"],
+        "answer": "3.14"
+    },
+    {
+        "id": 6,
+        "question": "If \\(f(x) = 3x + 5\\), what is \\(f(2)\\)?",
+        "options": ["6", "11", "7", "10"],
+        "answer": "11"
+    },
+    {
+        "id": 7,
+        "question": "What is the area of a circle with radius 3?",
+        "options": ["\\(9\\pi\\)", "\\(6\\pi\\)", "\\(3\\pi\\)", "\\(12\\pi\\)"],
+        "answer": "\\(9\\pi\\)"
+    },
+    {
+        "id": 8,
+        "question": "What is the next prime number after 7?",
+        "options": ["9", "10", "11", "13"],
+        "answer": "11"
+    },
+    {
+        "id": 9,
+        "question": "What is the value of \\(\\log_{10} 1000\\)?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+    },
+    {
+        "id": 10,
+        "question": "Solve for \\(x\\): \\(x^2 - 4 = 0\\)",
+        "options": ["\\(x = 2\\) or \\(x = -2\\)", "\\(x = 4\\) or \\(x = -4\\)", "\\(x = 0\\)", "\\(x = 1\\) or \\(x = -1\\)"],
+        "answer": "\\(x = 2\\) or \\(x = -2\\)"
+    },
+    {
+        "id": 11,
+        "question": "What is the factorial of 4 (4!)?",
+        "options": ["12", "24", "16", "20"],
+        "answer": "24"
+    },
+    {
+        "id": 12,
+        "question": "What is the median of the set {3, 7, 9, 5, 11}?",
+        "options": ["7", "5", "9", "8"],
+        "answer": "7"
+    },
+    {
+        "id": 13,
+        "question": "What is the range of the function \\(f(x) = x^2\\)?",
+        "options": ["All real numbers", "\\([0, \\infty)\\)", "\\((-\\infty, 0]\\)", "\\((0, \\infty)\\)"],
+        "answer": "\\([0, \\infty)\\)"
+    },
+    {
+        "id": 14,
+        "question": "What is the value of \\(\\sin 90^\\circ\\)?",
+        "options": ["0", "1", "-1", "Undefined"],
+        "answer": "1"
+    },
+    {
+        "id": 15,
+        "question": "What is the formula for the area of a rectangle?",
+        "options": ["Length + Width", "2 × (Length + Width)", "Length × Width", "Length ÷ Width"],
+        "answer": "Length × Width"
+    },
+    {
+        "id": 16,
+        "question": "What is the solution to the inequality \\(x - 3 > 2\\)?",
+        "options": ["\\(x > 5\\)", "\\(x < 5\\)", "\\(x > 1\\)", "\\(x < 1\\)"],
+        "answer": "\\(x > 5\\)"
+    },
+    {
+        "id": 17,
+        "question": "What is the simplest form of \\(\\frac{8}{12}\\)?",
+        "options": ["\\(\\frac{2}{3}\\)", "\\(\\frac{3}{4}\\)", "\\(\\frac{4}{6}\\)", "\\(\\frac{1}{2}\\)"],
+        "answer": "\\(\\frac{2}{3}\\)"
+    },
+    {
+        "id": 18,
+        "question": "What is the equation of a line with slope 2 and y-intercept 3?",
+        "options": ["\\(y = 2x + 3\\)", "\\(y = 3x + 2\\)", "\\(y = 2x - 3\\)", "\\(y = -2x + 3\\)"],
+        "answer": "\\(y = 2x + 3\\)"
+    },
+    {
+        "id": 19,
+        "question": "What is the greatest common divisor (GCD) of 24 and 36?",
+        "options": ["6", "8", "12", "18"],
+        "answer": "12"
+    },
+    {
+        "id": 20,
+        "question": "What is the value of \\(e\\) approximately?",
+        "options": ["2.71", "3.14", "1.41", "2.18"],
+        "answer": "2.71"
+    },
+    {
+        "id": 21,
+        "question": "What is the sum of the first 5 natural numbers?",
+        "options": ["10", "15", "20", "25"],
+        "answer": "15"
+    },
+    {
+        "id": 22,
+        "question": "What is the simplified form of \\(\\sqrt{50}\\)?",
+        "options": ["\\(5\\sqrt{2}\\)", "\\(10\\sqrt{5}\\)", "\\(25\\sqrt{2}\\)", "\\(5\\sqrt{5}\\)"],
+        "answer": "\\(5\\sqrt{2}\\)"
+    },
+    {
+        "id": 23,
+        "question": "What is the next number in the sequence: 2, 4, 8, 16, ...?",
+        "options": ["18", "20", "32", "24"],
+        "answer": "32"
+    },
+    {
+        "id": 24,
+        "question": "What is the perimeter of a square with side length 5?",
+        "options": ["10", "20", "15", "25"],
+        "answer": "20"
+    },
+    {
+        "id": 25,
+        "question": "What is the equation of a circle with center at (0,0) and radius r?",
+        "options": ["\\(x^2 + y^2 = r\\)", "\\(x^2 + y^2 = r^2\\)", "\\(x + y = r^2\\)", "\\(x^2 - y^2 = r^2\\)"],
+        "answer": "\\(x^2 + y^2 = r^2\\)"
+    },
+    {
+        "id": 26,
+        "question": "What is the integral of \\(\\int x \\, dx\\)?",
+        "options": ["\\(\\frac{x^2}{2} + C\\)", "\\(x^2 + C\\)", "\\(\\frac{1}{x} + C\\)", "\\(2x + C\\)"],
+        "answer": "\\(\\frac{x^2}{2} + C\\)"
+    },
+    {
+        "id": 27,
+        "question": "What is the probability of getting heads in a single coin toss?",
+        "options": ["1/4", "1/3", "1/2", "1"],
+        "answer": "1/2"
+    },
+    {
+        "id": 28,
+        "question": "What is the formula for the volume of a cube?",
+        "options": ["Side × Side × Side", "2 × Side × Side", "Side × Side", "Side + Side + Side"],
+        "answer": "Side × Side × Side"
+    },
+    {
+        "id": 29,
+        "question": "What is the mean of the set {4, 6, 8, 10}?",
+        "options": ["6", "7", "8", "9"],
+        "answer": "7"
+    },
+    {
+        "id": 30,
+        "question": "If \\(f(x) = 2x^2\\), what is \\(f(3)\\)?",
+        "options": ["12", "18", "6", "9"],
+        "answer": "18"
+    },
+    {
+        "id": 31,
+        "question": "What is the derivative of \\(\\sin x\\)?",
+        "options": ["\\(\\cos x\\)", "\\(-\\sin x\\)", "\\(-\\cos x\\)", "\\(\\sin x\\)"],
+        "answer": "\\(\\cos x\\)"
+    },
+    {
+        "id": 32,
+        "question": "What is the formula for the sum of an arithmetic series?",
+        "options": ["\\(\\frac{n}{2} (a_1 + a_n)\\)", "\\(n \\times a_1\\)", "\\(a_1 + a_n\\)", "\\(n^2\\)"],
+        "answer": "\\(\\frac{n}{2} (a_1 + a_n)\\)"
+    },
+    {
+        "id": 33,
+        "question": "What is the next number in the Fibonacci sequence: 1, 1, 2, 3, 5, 8, ...?",
+        "options": ["11", "12", "13", "15"],
+        "answer": "13"
+    },
+    {
+        "id": 34,
+        "question": "What is the logarithm of 1 to any base?",
+        "options": ["0", "1", "Undefined", "Infinity"],
+        "answer": "0"
+    },
+    {
+        "id": 35,
+        "question": "What is the solution to \\(\\frac{1}{x} = 2\\)?",
+        "options": ["\\(x = 2\\)", "\\(x = \\frac{1}{2}\\)", "\\(x = -2\\)", "\\(x = -\\frac{1}{2}\\)"],
+        "answer": "\\(x = \\frac{1}{2}\\)"
+    },
+    {
+        "id": 36,
+        "question": "Which property states \\(a(b + c) = ab + ac\\)?",
+        "options": ["Distributive Property", "Associative Property", "Commutative Property", "Identity Property"],
+        "answer": "Distributive Property"
+    },
+    {
+        "id": 37,
+        "question": "What is the value of \\(\\cos 0^\\circ\\)?",
+        "options": ["0", "1", "-1", "Undefined"],
+        "answer": "1"
+    },
+    {
+        "id": 38,
+        "question": "What is the slope of the line represented by the equation \\(y = 5\\)?",
+        "options": ["0", "5", "Undefined", "1"],
+        "answer": "0"
+    },
+    {
+        "id": 39,
+        "question": "What is the simplified form of \\( (x^3)(x^4) \\)?",
+        "options": ["\\(x^7\\)", "\\(x^{12}\\)", "\\(x^{1}\\)", "\\(x^{0}\\)"],
+        "answer": "\\(x^7\\)"
+    },
+    {
+        "id": 40,
+        "question": "What is the unit of force in the International System of Units (SI)?",
+        "options": ["Newton", "Joule", "Watt", "Pascal"],
+        "answer": "Newton"
+    },
+    {
+        "id": 41,
+        "question": "What is the acceleration due to gravity on Earth?",
+        "options": ["9.8 m/s²", "9.8 km/s²", "10 m/s", "9.8 m/s"],
+        "answer": "9.8 m/s²"
+    },
+    {
+        "id": 42,
+        "question": "Which law explains the relationship between force, mass, and acceleration?",
+        "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Universal Gravitation"],
+        "answer": "Newton's Second Law"
+    },
+    {
+        "id": 43,
+        "question": "What is the formula for kinetic energy?",
+        "options": ["\\( \\frac{1}{2} mv^2 \\)", "\\( mv \\)", "\\( mgh \\)", "\\( mg \\)"],
+        "answer": "\\( \\frac{1}{2} mv^2 \\)"
+    },
+    {
+        "id": 44,
+        "question": "What quantity is measured in Joules?",
+        "options": ["Force", "Energy", "Power", "Pressure"],
+        "answer": "Energy"
+    },
+    {
+        "id": 45,
+        "question": "What does Ohm's law relate?",
+        "options": ["Voltage, current, and resistance", "Power and energy", "Force and acceleration", "Mass and weight"],
+        "answer": "Voltage, current, and resistance"
+    },
+    {
+        "id": 46,
+        "question": "What is the speed of light in a vacuum?",
+        "options": ["\\( 3 \\times 10^8 \\) m/s", "\\( 3 \\times 10^6 \\) m/s", "\\( 3 \\times 10^5 \\) m/s", "\\( 3 \\times 10^7 \\) m/s"],
+        "answer": "\\( 3 \\times 10^8 \\) m/s"
+    },
+    {
+        "id": 47,
+        "question": "Which phenomenon explains the bending of light when it passes through different media?",
+        "options": ["Reflection", "Refraction", "Diffraction", "Interference"],
+        "answer": "Refraction"
+    },
+    {
+        "id": 48,
+        "question": "What is the formula for work done?",
+        "options": ["Force × displacement", "Mass × acceleration", "Energy × time", "Power × time"],
+        "answer": "Force × displacement"
+    },
+    {
+        "id": 49,
+        "question": "What is the relationship between frequency and wavelength of a wave?",
+        "options": ["Frequency × wavelength = speed of wave", "Frequency + wavelength = speed of wave", "Frequency - wavelength = speed of wave", "Frequency / wavelength = speed of wave"],
+        "answer": "Frequency × wavelength = speed of wave"
+    },
+    {
+        "id": 50,
+        "question": "Which of the following is a scalar quantity?",
+        "options": ["Velocity", "Force", "Mass", "Acceleration"],
+        "answer": "Mass"
+    },
+    {
+        "id": 51,
+        "question": "What is the principle stating that pressure applied to a confined fluid is transmitted undiminished?",
+        "options": ["Bernoulli's Principle", "Pascal's Principle", "Archimedes' Principle", "Boyle's Law"],
+        "answer": "Pascal's Principle"
+    },
+    {
+        "id": 52,
+        "question": "What is the acceleration of an object in free fall (ignoring air resistance)?",
+        "options": ["9.8 m/s²", "0 m/s²", "10 m/s", "9.8 km/s²"],
+        "answer": "9.8 m/s²"
+    },
+    {
+        "id": 53,
+        "question": "What is the unit of electric current?",
+        "options": ["Ampere", "Volt", "Ohm", "Watt"],
+        "answer": "Ampere"
+    },
+    {
+        "id": 54,
+        "question": "What type of energy does a stretched spring have?",
+        "options": ["Kinetic Energy", "Potential Energy", "Thermal Energy", "Nuclear Energy"],
+        "answer": "Potential Energy"
+    },
+    {
+        "id": 55,
+        "question": "Which force keeps planets in orbit around the sun?",
+        "options": ["Electromagnetic force", "Nuclear force", "Gravity", "Friction"],
+        "answer": "Gravity"
+    },
+    {
+        "id": 56,
+        "question": "What is the SI unit of power?",
+        "options": ["Watt", "Joule", "Newton", "Pascal"],
+        "answer": "Watt"
+    },
+    {
+        "id": 57,
+        "question": "What does the law of conservation of energy state?",
+        "options": ["Energy can be created and destroyed", "Energy can neither be created nor destroyed", "Energy is always increasing", "Energy is a scalar quantity"],
+        "answer": "Energy can neither be created nor destroyed"
+    },
+    {
+        "id": 58,
+        "question": "What is the frequency of a wave with a period of 0.01 seconds?",
+        "options": ["10 Hz", "100 Hz", "0.1 Hz", "1 Hz"],
+        "answer": "100 Hz"
+    },
+    {
+        "id": 59,
+        "question": "What is the name of the point where the lever pivots?",
+        "options": ["Load", "Effort", "Fulcrum", "Resistance"],
+        "answer": "Fulcrum"
+    },
+    {
+        "id": 60,
+        "question": "What kind of lens is thicker at the edges than in the middle?",
+        "options": ["Convex lens", "Concave lens", "Plano lens", "Bifocal lens"],
+        "answer": "Concave lens"
+    },
+    {
+        "id": 61,
+        "question": "What is the name of the energy possessed by motion?",
+        "options": ["Potential energy", "Kinetic energy", "Mechanical energy", "Thermal energy"],
+        "answer": "Kinetic energy"
+    },
+    {
+        "id": 62,
+        "question": "Which law states that for every action, there is an equal and opposite reaction?",
+        "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Conservation of Momentum"],
+        "answer": "Newton's Third Law"
+    },
+    {
+        "id": 63,
+        "question": "What is the effect called when light spreads out after passing through a narrow opening?",
+        "options": ["Reflection", "Refraction", "Diffraction", "Interference"],
+        "answer": "Diffraction"
+    },
+    {
+        "id": 64,
+        "question": "What does the term 'velocity' refer to?",
+        "options": ["Speed only", "Speed with direction", "Distance", "Acceleration"],
+        "answer": "Speed with direction"
+    },
+    {
+        "id": 65,
+        "question": "What is the chemical symbol for Sodium?",
+        "options": ["Na", "S", "So", "N"],
+        "answer": "Na"
+    },
+    {
+        "id": 66,
+        "question": "What is the pH value of pure water at 25°C?",
+        "options": ["7", "0", "14", "1"],
+        "answer": "7"
+    },
+    {
+        "id": 67,
+        "question": "Which gas is most abundant in Earth's atmosphere?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "answer": "Nitrogen"
+    },
+    {
+        "id": 68,
+        "question": "What is the process called when a solid changes directly into a gas?",
+        "options": ["Condensation", "Sublimation", "Evaporation", "Melting"],
+        "answer": "Sublimation"
+    },
+    {
+        "id": 69,
+        "question": "What particle determines the identity of an element?",
+        "options": ["Electron", "Proton", "Neutron", "Photon"],
+        "answer": "Proton"
+    },
+    {
+        "id": 70,
+        "question": "Which acid is found in vinegar?",
+        "options": ["Hydrochloric acid", "Acetic acid", "Sulfuric acid", "Nitric acid"],
+        "answer": "Acetic acid"
+    },
+    {
+        "id": 71,
+        "question": "What is the chemical formula for table salt?",
+        "options": ["NaCl", "KCl", "Na2SO4", "CaCl2"],
+        "answer": "NaCl"
+    },
+    {
+        "id": 72,
+        "question": "What is the atomic number of Carbon?",
+        "options": ["6", "12", "14", "8"],
+        "answer": "6"
+    },
+    {
+        "id": 73,
+        "question": "What type of bond involves the sharing of electron pairs between atoms?",
+        "options": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
+        "answer": "Covalent bond"
+    },
+    {
+        "id": 74,
+        "question": "Which element has the highest electronegativity?",
+        "options": ["Oxygen", "Fluorine", "Chlorine", "Nitrogen"],
+        "answer": "Fluorine"
+    },
+    {
+        "id": 75,
+        "question": "What is the name of the process by which a liquid turns into a gas?",
+        "options": ["Melting", "Boiling", "Freezing", "Sublimation"],
+        "answer": "Boiling"
+    },
+    {
+        "id": 76,
+        "question": "Which law states that the volume of a gas is inversely proportional to its pressure at constant temperature?",
+        "options": ["Charles's Law", "Boyle's Law", "Avogadro's Law", "Gay-Lussac's Law"],
+        "answer": "Boyle's Law"
+    },
+    {
+        "id": 77,
+        "question": "What is the main gas responsible for the greenhouse effect?",
+        "options": ["Oxygen", "Methane", "Carbon Dioxide", "Nitrogen"],
+        "answer": "Carbon Dioxide"
+    },
+    {
+        "id": 78,
+        "question": "Which subatomic particle has no electric charge?",
+        "options": ["Proton", "Electron", "Neutron", "Positron"],
+        "answer": "Neutron"
+    },
+    {
+        "id": 79,
+        "question": "What is the oxidation state of oxygen in most compounds?",
+        "options": ["-2", "-1", "+1", "+2"],
+        "answer": "-2"
+    },
+    {
+        "id": 80,
+        "question": "What is the basic unit of life?",
+        "options": ["Atom", "Molecule", "Cell", "Organ"],
+        "answer": "Cell"
+    },
+    {
+        "id": 81,
+        "question": "Which organelle is responsible for energy production in cells?",
+        "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+        "answer": "Mitochondria"
+    },
+    {
+        "id": 82,
+        "question": "What molecule carries genetic information?",
+        "options": ["DNA", "RNA", "Protein", "Lipid"],
+        "answer": "DNA"
+    },
+    {
+        "id": 83,
+        "question": "Which process produces gametes?",
+        "options": ["Mitosis", "Meiosis", "Fertilization", "Binary fission"],
+        "answer": "Meiosis"
+    },
+    {
+        "id": 84,
+        "question": "What is the primary function of the roots in plants?",
+        "options": ["Photosynthesis", "Absorption of water and nutrients", "Reproduction", "Support"],
+        "answer": "Absorption of water and nutrients"
+    },
+    {
+        "id": 85,
+        "question": "What type of macromolecule are enzymes?",
+        "options": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+        "answer": "Proteins"
+    },
+    {
+        "id": 86,
+        "question": "Which blood cells help fight infections?",
+        "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+        "answer": "White blood cells"
+    },
+    {
+        "id": 87,
+        "question": "What is the process by which plants convert sunlight into energy?",
+        "options": ["Respiration", "Photosynthesis", "Fermentation", "Transpiration"],
+        "answer": "Photosynthesis"
+    },
+    {
+        "id": 88,
+        "question": "Which system in the human body is responsible for transporting oxygen?",
+        "options": ["Nervous system", "Circulatory system", "Digestive system", "Respiratory system"],
+        "answer": "Circulatory system"
+    },
+    {
+        "id": 89,
+        "question": "What is the genetic material found in the nucleus of a cell?",
+        "options": ["Ribosomes", "Chromosomes", "Mitochondria", "Cytoplasm"],
+        "answer": "Chromosomes"
+    },
+    {
+        "id": 90,
+        "question": "What does CPU stand for in computer science?",
+        "options": ["Central Process Unit", "Central Processing Unit", "Computer Personal Unit", "Central Performance Unit"],
+        "answer": "Central Processing Unit"
+    },
+    {
+        "id": 91,
+        "question": "Which data structure uses First In First Out (FIFO) ordering?",
+        "options": ["Stack", "Queue", "Tree", "Graph"],
+        "answer": "Queue"
+    },
+    {
+        "id": 92,
+        "question": "What is the purpose of an operating system?",
+        "options": ["Manage hardware and software resources", "Write code", "Display graphics", "Manage internet connection"],
+        "answer": "Manage hardware and software resources"
+    },
+    {
+        "id": 93,
+        "question": "Which programming language is known for its use in web development?",
+        "options": ["Python", "HTML", "Java", "C++"],
+        "answer": "HTML"
+    },
+    {
+        "id": 94,
+        "question": "What is a variable in programming?",
+        "options": ["A fixed value", "A symbol that stores data", "A type of function", "A programming error"],
+        "answer": "A symbol that stores data"
+    },
+    {
+        "id": 95,
+        "question": "Which of these is a looping structure in programming?",
+        "options": ["If statement", "For loop", "Function", "Variable"],
+        "answer": "For loop"
+    },
+    {
+        "id": 96,
+        "question": "What does HTML stand for?",
+        "options": ["HyperText Markup Language", "HyperText Machine Language", "Hyperlink Markup Language", "Hyper Transfer Markup Language"],
+        "answer": "HyperText Markup Language"
+    },
+    {
+        "id": 97,
+        "question": "What is the binary number for decimal 5?",
+        "options": ["0101", "1010", "1111", "1001"],
+        "answer": "0101"
+    },
+    {
+        "id": 98,
+        "question": "Which device is used as the primary memory in a computer?",
+        "options": ["Hard Disk", "RAM", "CPU", "GPU"],
+        "answer": "RAM"
+    },
+    {
+        "id": 99,
+        "question": "What does 'debugging' mean in programming?",
+        "options": ["Writing new code", "Removing errors from code", "Adding comments", "Compiling code"],
+        "answer": "Removing errors from code"
     }
 ]

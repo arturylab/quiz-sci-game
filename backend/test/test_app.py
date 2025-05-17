@@ -30,7 +30,7 @@ def test_validate_correct_answer(client):
     """
     response = client.post('/validate', json={
         'question_id': 0,
-        'answer': 'H2O'
+        'answer': '8'
     })
     assert response.status_code == 200
     data = response.get_json()
@@ -43,7 +43,7 @@ def test_validate_incorrect_answer(client):
     """
     response = client.post('/validate', json={
         'question_id': 0,
-        'answer': 'CO2'
+        'answer': '6'
     })
     assert response.status_code == 200
     data = response.get_json()
