@@ -61,3 +61,50 @@ button:hover {
   margin-top: 10px;
   font-size: 18px;
 }
+
+/* Admin Stats Table Styles */
+#admin-stats-screen { /* Optional: if you want the admin container to be wider */
+    max-width: 800px; /* Reduced max-width */
+}
+
+#stats-table-container {
+    width: 100%;
+    margin-top: 15px; /* Slightly reduced margin */
+    overflow-x: auto; /* For responsiveness on smaller screens */
+}
+
+#stats-table-container table {
+    width: 100%;
+    border-collapse: collapse; /* Overrides potential global table styles */
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08); /* Softer shadow */
+    border-radius: 6px; /* Slightly smaller radius */
+    overflow: hidden; /* Ensures border-radius is applied to table corners */
+    font-size: 14px; /* Reduced base font size for table content */
+}
+
+#stats-table-container th,
+#stats-table-container td {
+    border: 1px solid #e8e8e8; /* Lighter border */
+    padding: 8px 10px; /* Reduced padding */
+    text-align: left;
+}
+
+#stats-table-container th {
+    background-color: #007bff; /* A common admin panel header color */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.04em; /* Slightly reduced letter-spacing */
+}
+
+#stats-table-container tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray for even rows */
+}
+
+#stats-table-container tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+#stats-table-container td {
+    color: #495057; /* Dark gray for text in cells */
+}

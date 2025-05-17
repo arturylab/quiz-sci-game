@@ -8,7 +8,15 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <div id="intro-screen" class="container">
+  <div id="login-screen" class="container">
+    <h1>🧑‍🎓 Student/Admin Login</h1>
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="handleLogin()">Login</button>
+    <p id="login-feedback" style="color: red;"></p>
+  </div>
+
+  <div id="intro-screen" class="container" style="display:none;">
     <h1>🧪🎮 Welcome to the Science Quiz Game!</h1>
     <p>This educational game consists of <strong>100 multiple-choice questions</strong> covering:</p>
     <p>📐 Mathematics (40 questions)<br>
@@ -39,6 +47,14 @@
 
     <div id="feedback"></div>
 
+  </div>
+
+  <div id="admin-stats-screen" class="container" style="display:none;">
+    <h1>📊 Admin Dashboard - Exam Results</h1>
+    <button onclick="logoutAndReset()">Logout</button>
+    <div id="stats-table-container">
+      <p>Loading statistics...</p>
+    </div>
   </div>
 
   <script src="app.js"></script>

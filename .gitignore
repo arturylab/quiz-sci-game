@@ -1,2 +1,6 @@
 __pycache__
 .pytest_cache
+
+# Ignore generated exam files and credentials
+/backend/teacher_tools/exams/
+/backend/teacher_tools/credentials.json

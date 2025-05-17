@@ -1,0 +1,42 @@
+[
+  {
+    "username": "S001",
+    "total_score": 18,
+    "total_questions_in_exam": 20,
+    "scores_by_category": {
+      "math": 6,
+      "physics": 5,
+      "chemistry": 3,
+      "biology": 2,
+      "cs": 2
+    },
+    "questions_per_category_in_exam": {
+      "math": 8,
+      "physics": 5,
+      "chemistry": 3,
+      "biology": 2,
+      "cs": 2
+    },
+    "timestamp": "2025-05-17T21:16:54.917818Z"
+  },
+  {
+    "username": "S002",
+    "total_score": 19,
+    "total_questions_in_exam": 20,
+    "scores_by_category": {
+      "math": 8,
+      "physics": 5,
+      "chemistry": 2,
+      "biology": 2,
+      "cs": 2
+    },
+    "questions_per_category_in_exam": {
+      "math": 8,
+      "physics": 5,
+      "chemistry": 3,
+      "biology": 2,
+      "cs": 2
+    },
+    "timestamp": "2025-05-17T14:20:37.114799Z"
+  }
+]
